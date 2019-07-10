@@ -1,0 +1,10 @@
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\bin\Debug\FirstLoginTest.exe.config
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\bin\Debug\FirstLoginTest.exe
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\bin\Debug\FirstLoginTest.pdb
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\bin\Debug\WebDriver.dll
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\bin\Debug\WebDriver.xml
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\obj\Debug\FirstLoginTest.csprojAssemblyReference.cache
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\obj\Debug\FirstLoginTest.csproj.CoreCompileInputs.cache
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\obj\Debug\FirstLoginTest.csproj.CopyComplete
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\obj\Debug\FirstLoginTest.exe
+D:\FirstTestAutomation\FirstLoginTest\FirstLoginTest\obj\Debug\FirstLoginTest.pdb
