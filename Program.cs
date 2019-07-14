@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FirstLoginTest
@@ -44,7 +45,37 @@ namespace FirstLoginTest
             {
                 Console.WriteLine("Login failded, test failed");
             }
-            //Add time and material test case
+            //Create Time and Material test
+
+            //Go to Administration
+            driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a")).Click();
+            //Click on Time & Materials page
+            driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a")).Click();
+            //Click on Create New button
+            IWebElement CNew=driver.FindElement(By.XPath("//*[@id='container']/p/a"));
+            CNew.Click();
+            //Enter code
+            IWebElement Code = driver.FindElement(By.Id("Code"));
+            Code.SendKeys("987");
+            //Enter description
+            IWebElement Desc = driver.FindElement(By.Id("Description"));
+            Desc.SendKeys("Test");
+            //Click on save button
+            IWebElement Save = driver.FindElement(By.XPath("//*[@id='SaveButton']"));
+            Save.Click();
+            Thread.Sleep(1000);
+            //Go to last page of the item list
+            IWebElement Last = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/a[4]"));
+            Last.Click();
+            //Verify the existance of the created record
+            if(driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr/td[1]")).Text == "987")
+            {
+                Console.WriteLine("Record Created Successfully, Test Pass");
+            }
+            else
+            {
+                Console.WriteLine("Test Failed, Try Again!");
+            }
         }
     }
 }
